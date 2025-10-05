@@ -26,6 +26,6 @@ print_r('Size: ' . $sll->count() . PHP_EOL);
 ```
 Output
 ```text
-["i am first now!"] -> ["i should be first"] -> ["foo 10"] -> ["bar 100"] -> ["i should be last"]
-Size: 5
+["i am first now!"] -> ["i should be first"] -> ["123"] -> ["foo 10"] -> ["bar 100"] -> ["i should be last"]
+Size: 6
 ```
