@@ -14,8 +14,7 @@ final class SinglyLinkedList implements \Stringable, \Countable
 
     public function insertAtEnd(string $value): Node
     {
-        $head = $this->head;
-        if ($head === null) {
+        if ($this->head === null) {
             $this->head = new Node($value);
             return $this->head;
         }
@@ -27,7 +26,7 @@ final class SinglyLinkedList implements \Stringable, \Countable
 
         $node->nextNode = new Node($value);
 
-        return $head;
+        return $this->head;
     }
 
     public function insertAtStart(string $value): Node
